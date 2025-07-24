@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+
+.positionContainer {
+    @apply px-40 py-5 mx-auto;
+  }
+
+  :root{
+    --green-toast-loading-bar: #00c951;
+  }
