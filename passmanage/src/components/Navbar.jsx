@@ -19,7 +19,7 @@ return (
 
             <button className='bg-slate-200 justify-center items-center flex flex-row gap-2 px-5 py-2 border rounded-2xl cursor-pointer text-sm md:text-base'>
                 <img className="w-5 md:w-6" src="/icons/github-brands.svg" alt="Github Logo"  />
-                <span className='font-semibold text-gray-800  '> <a href="https://github.com/Hassan1806" target='_blank' > Github</a></span>
+                <span className='font-semibold text-gray-800  '> <a href="https://github.com/Hassan1806/Password-manager" target='_blank' > Github</a></span>
             </button>
             
             </div>
