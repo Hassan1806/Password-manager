@@ -27,7 +27,7 @@ const Register = () => {
           sitekey={"6LcRb5MrAAAAALRKAj1m20GNvlkR3-MxT8bZu0Pc"}
           onChange={(value) => setCaptchaValue(value)}
         />
-        <button disabled={!captchaValue} className='bg-blue-500 text-white p-2 rounded-md cursor-pointer'>Register</button>
+        <button disabled={!captchaValue} className='bg-[#00a63e] text-white p-2 rounded-lg cursor-pointer transition-all duration-300 delay-150 ease-in hover:border-[#00a63de9] border-3 hover:bg-[#00a63de9]'>Register</button>
       </div>
 </div>   
   )
