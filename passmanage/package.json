@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.12",
+    "mongodb": "^6.18.0",
+    "mongoose": "^8.17.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-google-recaptcha": "^3.1.0",

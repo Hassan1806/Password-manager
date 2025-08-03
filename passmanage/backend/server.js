@@ -6,16 +6,20 @@ import cors from 'cors'
 import mongoose from 'mongoose'
 import cookieParser from 'cookie-parser'
 
+
+mongoose.connect('mongodb://127.0.0.1:27017/passop')
+
+
 dotenv.config()
 const dbname = 'passop';
-const url = process.env.MONGODB_URI
+const URI = process.env.MONGODB_URI
 
-if (!url) {
+if (!URI) {
   console.error('Error: MONGODB_URI is not defined in the environment variables.');
   process.exit(1); // Exit if the MongoDB URI is not defined
 }
 
-console.log('MongoDB URI:', url);
+console.log('MongoDB URI:', URI);
 
 const port = process.env.PORT || 3000
 
@@ -85,3 +89,9 @@ app.delete('/', async (req, res) => {
 app.listen(port, () => {
   console.log(`Example app listening on http://localhost:${port}`)
 }) // Closing brace for serverStarts function
+
+
+app.get('/api/test', (req, res) => {
+  res.send({ status: 'Backend is working!' });
+});
+

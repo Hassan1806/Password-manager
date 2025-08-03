@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import ReCAPTCHA from 'react-google-recaptcha'
+import { Outlet, Link } from "react-router-dom";
 
 const Register = () => {
 
@@ -28,6 +29,8 @@ const Register = () => {
           onChange={(value) => setCaptchaValue(value)}
         />
         <button disabled={!captchaValue} className='bg-[#00a63e] text-white p-2 rounded-lg cursor-pointer transition-all duration-300 delay-150 ease-in hover:border-[#00a63de9] border-3 hover:bg-[#00a63de9]'>Register</button>
+
+        <span className='pl-2'><p>Already registered? <Link to={'/login'} className='text-[#00a63e]'>Login</Link> </p></span>
       </div>
 </div>   
   )
